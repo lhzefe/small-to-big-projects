@@ -26,3 +26,4 @@ The projects are categorised by level of difficulty, but you have to bear in min
 - **[Rock Paper Scissors](/4%20-%20rock-paper-scissors/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
 - **[Password Generator](/5%20-%20password-generator/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
 - **[Hangman](/6%20-%20hangman/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
+- **[Caesar Cipher](/7%20-%20caesar-cipher/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
