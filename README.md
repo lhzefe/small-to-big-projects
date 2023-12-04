@@ -27,3 +27,5 @@ The projects are categorised by level of difficulty, but you have to bear in min
 - **[Password Generator](/5%20-%20password-generator/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
 - **[Hangman](/6%20-%20hangman/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
 - **[Caesar Cipher](/7%20-%20caesar-cipher/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
+- **[Blind Auction](/8%20-%20blind-auction/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
+- **[Calculator](/9%20-%20calculator/)** proposed by [Dr. Angela Yu](https://github.com/angelabauer)
