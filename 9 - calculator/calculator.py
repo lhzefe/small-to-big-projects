@@ -1,20 +1,3 @@
-def operation(operator: str, a, b):
-    '''
-    Return the result based on the operation's choice.
-    E.g.: operation(+), will return the result of _sum(a,b).
-    '''
-    
-    if operator == "+":
-        return _sum(a, b)
-    elif operator == "-":
-        return _sub(a, b)
-    elif operator == "*":
-        return _mult(a, b)
-    elif operator == "/" and b != 0:
-        return _div(a, b)
-    else:
-        return "invalid operation"
-
 def _sum(a, b):
     '''
     Return the sum of two numbers passed as parameters.
@@ -34,7 +17,10 @@ def _div(a, b):
     Return the division of two numbers passed as parameters.
     E.g.: _div(4,2), will return 2.
     '''
-    return a / b
+    if b != 0:
+        return a / b
+    else:
+        return "Invalid division"
 
 def _mult(a, b):
     '''
@@ -43,8 +29,37 @@ def _mult(a, b):
     '''
     return a * b
 
-print("This is a simple calculator with the basics operators *, -, + and /")
-first_number = float(input("Type the first number: "))
-operator = str(input("Choose an operator: "))
-second_number = float(input("Type the second number: "))
-print (operation(operator, first_number, second_number))
+def calculator():
+    '''This is the function that makes the calculus'''
+    
+    print("This is a simple calculator with the basics operators")
+    first_number = float(input("Type the first number: "))
+    continue_calculating = True
+    while continue_calculating:
+        for operator in operators: print(operator, end="   ")
+        operator_selected = str(input("1=> Choose an operator: "))
+        operation = operators[operator_selected]
+        second_number = float(input("Type the second number: "))
+        result = operation(first_number, second_number)
+        print(f"{first_number} {operator_selected} {second_number} = {result}")
+        
+        keep_result = input("Would you like to do another operation with the\
+ current result?\n[y] for yes\n[n] for new calculus\n[e] for exit\n--> ")
+
+        if keep_result == 'y':
+            first_number = result
+            continue_calculating = True
+        elif keep_result == 'n':
+            continue_calculating = False
+            calculator()
+        else:
+            continue_calculating = False
+
+operators = {
+    "+": _sum,
+    "*": _mult,
+    "-": _sub,
+    "/": _div,
+}
+
+calculator()
